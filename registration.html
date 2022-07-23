@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            CUSTOMER REGISTRATION
+        </title>
+    </head>
+    <body>
+        <form align="center">
+            <input type="text" maxlength="15" pattern="[a-zA-Z]+" autofocus placeholder="enter your name"/><br><br>
+            <input type="password" minLength="8" maxLength="12" pattern="[0-9]+" required placeholder="enter your password"/><br><br>
+            <input type="email" placeholder="enter your email"/><br><br>
+            <label>select your gender:</label><br>
+            <input type="radio" name="Gender">Male<br>
+            <input type="radio" name="Gender">female<br>
+            <input type="radio" name="Gender">Other<br>
+            Age:<input type="number" min="12" max="60"/><br><br>
+            Address:<textarea rows="4" cols="20"></textarea>
+            <br><br>
+            <label for="cars">Choose a country:</label><br>
+            <select name="country" id="country">
+              <option value="INDIA">India</option>
+              <option value="US">US</option>
+              <option value="GERMANY">Germany</option>
+              <option value="JAPAN">Japan</option>
+            </select><br><br>
+            <input type="submit" value="register"/>
+            <input type="reset" value="clear"/>
+        </form>
+    </body>
+</html>
