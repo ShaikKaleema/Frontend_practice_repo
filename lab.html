@@ -1,17 +1,49 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <tilte></tilte>
-        <link href="main.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>smiley</h1>
-        <svg class="smiley" width="256" height="256" viewBox"0 0 256 256">
-            <circle class="face" cx="128" cy="128" r="120"/>
-            <circle class="left-eye" cx="100" cy="104" r="12"/>
-            <circle class="right-eye" cx="156" cy="104" r="12"/>
-            <path  class="mouth" d="M100,160  Q128,190 156,160"/>
-            <rect class="left-eyebrow" x="97" y="66" width="6" height="32" rx="4" ry="4"/>
-            <rect class="right-eyebrow" x="153" y="66" width="6" height="32" rx="4" ry="4"/>
-        </svg>
-    </body>
+
+<head>
+	<title>
+	     Event Bubbling in Javascript
+	</title>
+</head>
+
+<body>
+
+	<h2>Event Bubbling in Javascript</h2>
+
+	<div id="login">
+	<button>
+		<h2>Login</h2>
+	</button>
+	<button id="logout">
+		
+               <h2>Logout</h2>
+
+	</button>
+        <button id="register">
+		
+               <h2>register</h2>
+
+	</button>
+	</div><br>
+
+
+	<script>
+		document.getElementById(
+"login").addEventListener("click", function () {
+			alert("You logged in successfully!");
+		}, false);
+
+		document.getElementById(
+"logout").addEventListener("click", function () {
+			alert("Your logout is successful!");
+		}, false);
+                document.getElementById(
+"register").addEventListener("click", function () {
+			alert("Your registration is successful!");
+		}, false);
+	</script>
+
+</body>
+
 </html>
